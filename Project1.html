@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+   <head>
+    <title>Customer Details</title>
+    </head>
+    <style>
+        h1 { color:red;
+             text-align:center}
+        form { background-color:aquamarine;
+         text-align: center;
+            border: 2px solid yellow;
+        padding:50px;}
+        .ch{ margin-bottom:10px;  }
+    
+    
+    </style>
+    <body>
+     <div >
+
+     <h1> Customer details</h1>
+     <form id="demoform">
+     
+      
+        <label for="fname">First name</label>
+        &nbsp; <input type="text" id="name" placeholder="eneter your name" class="ch"><br/>
+        <label for="Email">Email id</label>
+        &nbsp;<input type="text" id="email" placeholder="enter your email id" class="ch"><br/>
+        <label for="contno">Contact Number</label>
+        &nbsp; <input type="text" id="contactno" placeholder="enter your contact number" class="ch"><br/>
+        <button type="submit" style="float: inherit">submit</button>
+        
+     </form>
+    </div>
+           
+    <script>
+            var form =  document.getElementById('demoform');
+            form.addEventListener('submit', function(){
+                var name = form.name.value;
+                var email = form.email.value || 'imads@gmail.com';
+                var mobile = form.contactno.value;
+               document.write('Your name is ' + name + "\n Your Email is "+ email + "\n Your Number is s"+ mobile);
+            })
+            
+            
+         </script>
+    </body>
+   
+</html>
